@@ -15,15 +15,13 @@ echo 'deb [signed-by=/usr/share/keyrings/google-chrome-keyring.gpg] http://dl.go
 sudo apt update -y
 sudo apt install -y google-chrome-stable
 
-# Install Skype
-echo "Installing Skype..."
-wget -O skype.deb https://go.skype.com/skypeforlinux-64.deb
-sudo apt install -y ./skype.deb
-rm -f skype.deb
+# Install Teams
+echo "Installing Teams..."
+sudo snap install -y teams-for-linux
 
 # Install GitHub Desktop
 echo "Installing GitHub Desktop..."
-wget -O github-desktop.deb https://github.com/shiftkey/desktop/releases/download/release-3.3.11-linux1/GitHubDesktop-linux-amd64-3.3.11-linux1.deb
+wget -O github-desktop.deb https://github.com/shiftkey/desktop/releases/download/release-3.4.13-linux1/GitHubDesktop-linux-amd64-3.4.13-linux1.deb
 sudo apt install -y ./github-desktop.deb
 rm -f github-desktop.deb
 
